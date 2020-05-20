@@ -6,10 +6,14 @@
     </saved-by-versions>
     <comment/>
     <tags/>
-    <referenced-types/>
+    <referenced-types>
+      <type name="Person"/>
+    </referenced-types>
     <referenced-snippets/>
     <triggers/>
-    <typed-variables/>
+    <typed-variables>
+      <typed-variable name="person" type-name="Person"/>
+    </typed-variables>
     <global-variables/>
     <parameters/>
     <return-variables/>
@@ -17,7 +21,16 @@
     <device-mappings/>
     <browser-engine>WEBKIT</browser-engine>
   </prologue>
-  <property name="variables" class="Variables"/>
+  <property name="variables" class="Variables">
+    <object class="Variable" serializationversion="1">
+      <property name="name" class="String">person</property>
+      <property name="initialAssignment" class="InitialVariableAssignment">
+        <property name="type" class="TypeReference" serializationversion="0">
+          <property name="typeName" class="String">Person</property>
+        </property>
+      </property>
+    </object>
+  </property>
   <property name="proxyServerConfiguration" class="ProxyServerConfiguration" serializationversion="0"/>
   <property name="httpClientType" class="HttpClientType">
     <property name="enum-name" class="String">WEBKIT</property>
